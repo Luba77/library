@@ -1,0 +1,53 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <div>
+        <div class="float-left">
+            <h1>{{ title }}</h1>
+        </div>
+    </div>
+    <table class="table table-lg table-striped">
+        <thead class="thead-dark">
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Title</th>
+            <th scope="col">Due Back</th>
+            <th scope="col">Status</th>
+            <th scope="col">Days Until Due Back</th>
+            <th scope="col">Overdue</th>
+            <th scope="col">User</th>
+        </tr>
+        </thead>
+        <tbody>
+            {% for book_copy in book_copy_list %}
+                {% if book_copy.is_overdue %}
+                    <tr class="table-danger">
+                {% elif book_copy.status == 'r' %}
+                    <tr class="table-warning">
+                {% else %}
+                    <tr>
+                {% endif %}
+                    <th scope="row">{{ forloop.counter }}</th>
+                    <td><a href="{% url 'book_detail' book_copy.book.id %}">{{ book_copy.book.title }}</a></td>
+                    <td>{{ book_copy.due_back }}</td>
+                    <td>{{ book_copy.get_status_display }}</td>
+                    <td>
+                        {% if book_copy.status == 'l' or book_copy.status == 'r' %}
+                            {{ book_copy.days_until_due_back }}
+                        {% else %}
+                            N/A
+                        {% endif %}
+                    </td>
+                    <td>{% if book_copy.is_overdue %}Yes{% else %}No{% endif %}</td>
+                    <td>
+                        {% if book_copy.borrower and book_copy.status == 'l' or book_copy.status == 'r' and book_copy.is_overdue %}
+                            <a href="{% url 'user_detail' book_copy.borrower.id %}">{{ book_copy.borrower.email }}</a>
+                        {% else %}
+                            N/A
+                        {% endif %}
+                    </td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+{% endblock content %}

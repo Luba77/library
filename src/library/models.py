@@ -1,3 +1,4 @@
+import datetime
 import uuid
 
 from django.conf import settings
@@ -46,14 +47,14 @@ class Book(models.Model):
 
 class BookCopy(models.Model):
     BOOK_STATUS = (
-        ('un', 'Under maintenance'),
-        ('ch', 'Checked out'),
-        ('av', 'Available'),
-        ('re', 'Reserved'),
+        ('u', 'Under maintenance'),
+        ('l', 'Busy loan'),
+        ('a', 'Available'),
+        ('r', 'Reserved'),
     )
+
     id = models.UUIDField(primary_key=True, default=uuid.uuid4)
     book = models.ForeignKey('Book', on_delete=models.PROTECT, null=True)
-    publisher_info = models.CharField(max_length=200)
     due_back = models.DateField(null=True, blank=True)
     borrower = models.ForeignKey(
         settings.AUTH_USER_MODEL, on_delete=models.SET_NULL, null=True, blank=True)
@@ -61,11 +62,25 @@ class BookCopy(models.Model):
         max_length=1,
         choices=BOOK_STATUS,
         blank=True,
-        default='d')
+        default='u')
 
     class Meta:
         ordering = ['due_back']
         db_table = 'bookcopy'
 
-    def __str__(self):
-        return '{} {}'.format(self.id, self.book.title)
+    def days_until_due_back(self):
+        """
+        Calculate the number of days until the book is due back.
+        """
+        if self.due_back and not self.is_overdue():
+            return (self.due_back - datetime.date.today()).days
+        return None
+
+    def is_overdue(self):
+        """
+        Check if the book is overdue by 7 days or more.
+        """
+        if self.due_back and self.borrower:
+            return (datetime.date.today() - self.due_back).days >= 7
+        return False
+

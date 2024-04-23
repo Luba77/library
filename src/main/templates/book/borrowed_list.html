@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <div class="container mt-4">
+    <h1>Borrowed Books</h1>
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Title</th>
+          <th>Due Back</th>
+          <th>Status</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for book_copy in book_copy_list %}
+          <tr class="{% if book_copy.is_overdue %}table-danger{% elif book_copy.is_due_soon %}table-warning{% else %}table-success{% endif %}">
+            <td>{{ book_copy.book.title }}</td>
+            <td>{{ book_copy.due_back }}</td>
+            <td>{{ book_copy.get_status_display }}</td>
+          </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+{% endblock %}

@@ -1,0 +1,202 @@
+[
+  {
+    "model": "library.bookcopy",
+    "pk": "7fd5ff23-4f53-4e36-bdd3-6bb29a12d740",
+    "fields": {
+      "book": 1,
+      "due_back": "2024-04-30",
+      "borrower": 1,
+      "status": "u"
+    }
+  },
+  {
+    "model": "library.bookcopy",
+    "pk": "ad78833e-87e7-471d-a3b5-cb313dc3057b",
+    "fields": {
+      "book": 2,
+      "due_back": "2024-04-07",
+      "borrower": 1,
+      "status": "l"
+    }
+  },
+  {
+    "model": "library.bookcopy",
+    "pk": "cc6b4ae3-6e09-48d1-b794-2b3078d13c29",
+    "fields": {
+      "book": 3,
+      "due_back": "2024-05-12",
+      "borrower": 1,
+      "status": "a"
+    }
+  },
+  {
+    "model": "library.bookcopy",
+    "pk": "8d7be8a4-c342-43e2-80fd-ff225dfaedaf",
+    "fields": {
+      "book": 4,
+      "due_back": "2024-05-13",
+      "borrower": 3,
+      "status": "r"
+    }
+  },
+  {
+    "model": "library.bookcopy",
+    "pk": "1f0f1d21-09d7-4c98-8c59-5bf8b7d7cc24",
+    "fields": {
+      "book": 5,
+      "due_back": "2024-05-14",
+      "borrower": 3,
+      "status": "u"
+    }
+  },
+  {
+    "model": "library.bookcopy",
+    "pk": "3fe60e69-5706-4c3d-9825-ee1a03d52f4d",
+    "fields": {
+      "book": 6,
+      "due_back": "2024-05-15",
+      "borrower": 4,
+      "status": "l"
+    }
+  },
+  {
+    "model": "library.bookcopy",
+    "pk": "24d6b03b-4b5b-4f3d-a02c-efc1c0f07bb7",
+    "fields": {
+      "book": 7,
+      "due_back": "2024-05-16",
+      "borrower": 5,
+      "status": "a"
+    }
+  },
+  {
+    "model": "library.bookcopy",
+    "pk": "7eb4f5b3-b8c2-42f7-9b9b-7d66bbaf64fb",
+    "fields": {
+      "book": 8,
+      "due_back": "2024-05-17",
+      "borrower": 6,
+      "status": "r"
+    }
+  },
+  {
+    "model": "library.bookcopy",
+    "pk": "3cf87e0d-ee51-4988-9c8e-e7e51781a38b",
+    "fields": {
+      "book": 9,
+      "due_back": "2024-05-18",
+      "borrower": 4,
+      "status": "u"
+    }
+  },
+  {
+    "model": "library.bookcopy",
+    "pk": "eff493eb-00bb-4d33-9cbf-c13d0dc47120",
+    "fields": {
+      "book": 10,
+      "due_back": "2024-05-19",
+      "borrower": 7,
+      "status": "l"
+    }
+  },
+  {
+    "model": "library.bookcopy",
+    "pk": "02abf47b-68da-4e7c-833f-68ee1c30b7a1",
+    "fields": {
+      "book": 11,
+      "due_back": "2024-05-20",
+      "borrower": 7,
+      "status": "a"
+    }
+  },
+  {
+    "model": "library.bookcopy",
+    "pk": "fb07b601-6b13-446e-8020-f7f1cf289248",
+    "fields": {
+      "book": 12,
+      "due_back": "2024-05-21",
+      "borrower": 8,
+      "status": "r"
+    }
+  },
+  {
+    "model": "library.bookcopy",
+    "pk": "af75ff76-bf6d-44bb-94f4-d9fe20d21795",
+    "fields": {
+      "book": 13,
+      "due_back": "2024-05-22",
+      "borrower": 8,
+      "status": "u"
+    }
+  },
+  {
+    "model": "library.bookcopy",
+    "pk": "f3c16558-60c0-4e64-8c79-24c7803e2271",
+    "fields": {
+      "book": 14,
+      "due_back": "2024-05-23",
+      "borrower": 9,
+      "status": "l"
+    }
+  },
+  {
+    "model": "library.bookcopy",
+    "pk": "76b91bc7-df40-44cf-80cd-470e9b0f8d7f",
+    "fields": {
+      "book": 15,
+      "due_back": "2024-05-24",
+      "borrower": 10,
+      "status": "a"
+    }
+  },
+  {
+    "model": "library.bookcopy",
+    "pk": "16b56fc4-fa0e-4c48-85a2-4c00f16744b1",
+    "fields": {
+      "book": 16,
+      "due_back": "2024-05-25",
+      "borrower": 11,
+      "status": "r"
+    }
+  },
+  {
+    "model": "library.bookcopy",
+    "pk": "7c2d78ac-1c63-4b30-a03e-5262ee6a3df2",
+    "fields": {
+      "book": 17,
+      "due_back": "2024-05-26",
+      "borrower": 1,
+      "status": "u"
+    }
+  },
+  {
+    "model": "library.bookcopy",
+    "pk": "b97d8431-472f-4896-9643-6b44929b654d",
+    "fields": {
+      "book": 18,
+      "due_back": "2024-05-27",
+      "borrower": 3,
+      "status": "l"
+    }
+  },
+  {
+    "model": "library.bookcopy",
+    "pk": "1b0971a6-b972-4a88-a0d2-5887ad46311f",
+    "fields": {
+      "book": 19,
+      "due_back": "2024-05-28",
+      "borrower": 1,
+      "status": "a"
+    }
+  },
+  {
+    "model": "library.bookcopy",
+    "pk": "4f67e3ab-8a27-40ec-bbe2-b06cf00e91ff",
+    "fields": {
+      "book": 20,
+      "due_back": "2024-05-29",
+      "borrower": 1,
+      "status": "r"
+    }
+  }
+]

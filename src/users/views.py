@@ -1,7 +1,7 @@
 from django.contrib.auth import authenticate, login, logout
 from django.core.urlresolvers import reverse_lazy
 from django.http import HttpResponseRedirect
-from django.views.generic import CreateView, View, FormView
+from django.views.generic import CreateView, View, FormView, DetailView
 from .forms import UserLoginForm, UserSignUpForm
 from .models import User
 
@@ -54,6 +54,11 @@ class LogoutView(View):
     def get(self, request):
         logout(request)
         return HttpResponseRedirect(self.success_url)
+
+
+class UserDetailView(DetailView):
+    model = User
+    template_name = 'auth/detail.html'
 
 
 

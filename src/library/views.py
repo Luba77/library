@@ -1,6 +1,6 @@
 from django.views.generic import DetailView, ListView
 
-from .models import Book, Author
+from .models import Book, Author, BookCopy
 
 
 class BookListView(ListView):
@@ -13,7 +13,6 @@ class BookListView(ListView):
 class BookDetailView(DetailView):
     model = Book
     template_name = 'book/detail.html'
-    context_object_name = 'book'
 
 
 class AuthorListView(ListView):
@@ -26,4 +25,24 @@ class AuthorListView(ListView):
 class AuthorDetailView(DetailView):
     model = Author
     template_name = 'author/detail.html'
-    context_object_name = 'author'
+
+
+class BorrowedBookListView(ListView):
+    template_name = 'book/borrowed_list.html'
+    context_object_name = 'book_copy_list'
+
+    def get_queryset(self):
+        return (
+            BookCopy.objects.filter(borrower=self.request.user.id)
+            .filter(status__exact='l')
+            .order_by('due_back')
+        )
+
+
+class AllUsersBorrowedBookListView(ListView):
+    template_name = 'book/all_borrowed.html'
+    context_object_name = 'book_copy_list'
+
+    def get_queryset(self):
+        return (
+            BookCopy.objects.all().order_by('due_back'))
