@@ -1,0 +1,162 @@
+[
+  {
+    "model": "library.author",
+    "pk": 1,
+    "fields": {
+      "first_name": "John",
+      "last_name": "Doe"
+    }
+  },
+  {
+    "model": "library.author",
+    "pk": 2,
+    "fields": {
+      "first_name": "Jane",
+      "last_name": "Smith"
+    }
+  },
+  {
+    "model": "library.author",
+    "pk": 3,
+    "fields": {
+      "first_name": "Michael",
+      "last_name": "Johnson"
+    }
+  },
+  {
+    "model": "library.author",
+    "pk": 4,
+    "fields": {
+      "first_name": "Emily",
+      "last_name": "Brown"
+    }
+  },
+  {
+    "model": "library.author",
+    "pk": 5,
+    "fields": {
+      "first_name": "William",
+      "last_name": "Jones"
+    }
+  },
+  {
+    "model": "library.author",
+    "pk": 6,
+    "fields": {
+      "first_name": "Emma",
+      "last_name": "Taylor"
+    }
+  },
+  {
+    "model": "library.author",
+    "pk": 7,
+    "fields": {
+      "first_name": "David",
+      "last_name": "Wilson"
+    }
+  },
+  {
+    "model": "library.author",
+    "pk": 8,
+    "fields": {
+      "first_name": "Olivia",
+      "last_name": "Anderson"
+    }
+  },
+  {
+    "model": "library.author",
+    "pk": 9,
+    "fields": {
+      "first_name": "James",
+      "last_name": "Thomas"
+    }
+  },
+  {
+    "model": "library.author",
+    "pk": 10,
+    "fields": {
+      "first_name": "Sophia",
+      "last_name": "Jackson"
+    }
+  },
+  {
+    "model": "library.author",
+    "pk": 11,
+    "fields": {
+      "first_name": "Daniel",
+      "last_name": "White"
+    }
+  },
+  {
+    "model": "library.author",
+    "pk": 12,
+    "fields": {
+      "first_name": "Isabella",
+      "last_name": "Harris"
+    }
+  },
+  {
+    "model": "library.author",
+    "pk": 13,
+    "fields": {
+      "first_name": "Alexander",
+      "last_name": "Martin"
+    }
+  },
+  {
+    "model": "library.author",
+    "pk": 14,
+    "fields": {
+      "first_name": "Ella",
+      "last_name": "Thompson"
+    }
+  },
+  {
+    "model": "library.author",
+    "pk": 15,
+    "fields": {
+      "first_name": "Benjamin",
+      "last_name": "Garcia"
+    }
+  },
+  {
+    "model": "library.author",
+    "pk": 16,
+    "fields": {
+      "first_name": "Mia",
+      "last_name": "Robinson"
+    }
+  },
+  {
+    "model": "library.author",
+    "pk": 17,
+    "fields": {
+      "first_name": "Christopher",
+      "last_name": "Lewis"
+    }
+  },
+  {
+    "model": "library.author",
+    "pk": 18,
+    "fields": {
+      "first_name": "Charlotte",
+      "last_name": "Walker"
+    }
+  },
+  {
+    "model": "library.author",
+    "pk": 19,
+    "fields": {
+      "first_name": "Andrew",
+      "last_name": "Allen"
+    }
+  },
+  {
+    "model": "library.author",
+    "pk": 20,
+    "fields": {
+      "first_name": "Grace",
+      "last_name": "Young"
+    }
+  }
+]

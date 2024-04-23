@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+    <h1>Welcome to our Library</h1>
+    <p class="lead">Explore our vast collection of books and resources. From classic literature to modern bestsellers, we have something for everyone. Join our community of avid readers and discover new worlds through the pages of our library.</p>
+   {% if user.is_authenticated %}
+     <li> User: {{ user.get_username }}</li>
+   {% else %}
+        <a href="{% url 'register' %}" class="btn btn-primary">Register</a>
+        <a href="{% url 'login' %}" class="btn btn-primary">Login</a>
+   {% endif %}
+{% endblock %}

@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container mt-4">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card">
+                <div class="card-body">
+                    <h1 class="card-title">{{ author.first_name }} {{ author.last_name }}</h1>
+                    <h2 class="card-subtitle mb-3">Books:</h2>
+                    <ul class="list-group list-group-flush">
+                        {% for book in author.book_set.all %}
+                            <li class="list-group-item">
+                                <strong>{{ book.title }}</strong> -
+                                {% for genre in book.genre.all %}
+                                    {{ genre.name }}
+                                    {% if not forloop.last %}, {% endif %}
+                                {% endfor %}
+                            </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock content %}

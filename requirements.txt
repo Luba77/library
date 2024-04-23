@@ -2,3 +2,4 @@ django==1.8.5
 psycopg2-binary==2.8.5
 python-dotenv==0.18.0 
 uuid==1.30
+faker==3.0.1

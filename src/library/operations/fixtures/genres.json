@@ -1,0 +1,142 @@
+[
+  {
+    "model": "library.genre",
+    "pk": 1,
+    "fields": {
+      "name": "Fiction"
+    }
+  },
+  {
+    "model": "library.genre",
+    "pk": 2,
+    "fields": {
+      "name": "Mystery"
+    }
+  },
+  {
+    "model": "library.genre",
+    "pk": 3,
+    "fields": {
+      "name": "Fantasy"
+    }
+  },
+  {
+    "model": "library.genre",
+    "pk": 4,
+    "fields": {
+      "name": "Romance"
+    }
+  },
+  {
+    "model": "library.genre",
+    "pk": 5,
+    "fields": {
+      "name": "Science Fiction"
+    }
+  },
+  {
+    "model": "library.genre",
+    "pk": 6,
+    "fields": {
+      "name": "Thriller"
+    }
+  },
+  {
+    "model": "library.genre",
+    "pk": 7,
+    "fields": {
+      "name": "Historical Fiction"
+    }
+  },
+  {
+    "model": "library.genre",
+    "pk": 8,
+    "fields": {
+      "name": "Horror"
+    }
+  },
+  {
+    "model": "library.genre",
+    "pk": 9,
+    "fields": {
+      "name": "Adventure"
+    }
+  },
+  {
+    "model": "library.genre",
+    "pk": 10,
+    "fields": {
+      "name": "Biography"
+    }
+  },
+  {
+    "model": "library.genre",
+    "pk": 11,
+    "fields": {
+      "name": "Memoir"
+    }
+  },
+  {
+    "model": "library.genre",
+    "pk": 12,
+    "fields": {
+      "name": "Self-Help"
+    }
+  },
+  {
+    "model": "library.genre",
+    "pk": 13,
+    "fields": {
+      "name": "Cookbook"
+    }
+  },
+  {
+    "model": "library.genre",
+    "pk": 14,
+    "fields": {
+      "name": "Travel"
+    }
+  },
+  {
+    "model": "library.genre",
+    "pk": 15,
+    "fields": {
+      "name": "Poetry"
+    }
+  },
+  {
+    "model": "library.genre",
+    "pk": 16,
+    "fields": {
+      "name": "Comics"
+    }
+  },
+  {
+    "model": "library.genre",
+    "pk": 17,
+    "fields": {
+      "name": "Drama"
+    }
+  },
+  {
+    "model": "library.genre",
+    "pk": 18,
+    "fields": {
+      "name": "Science"
+    }
+  },
+  {
+    "model": "library.genre",
+    "pk": 19,
+    "fields": {
+      "name": "Art"
+    }
+  },
+  {
+    "model": "library.genre",
+    "pk": 20,
+    "fields": {
+      "name": "Music"
+    }
+  }
+]

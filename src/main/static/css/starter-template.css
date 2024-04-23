@@ -1,0 +1,50 @@
+.navbar {
+  color: #9370db;
+}
+
+.starter-template {
+  padding: 3rem 1.5rem;
+  text-align: center;
+  background-color: #e6e6fa;
+}
+
+.starter-template h1 {
+  color: #9370db;
+}
+
+.starter-template .lead {
+  color: #8a2be2;
+}
+
+.neon {
+  color: #da70d6;
+  font-size: 36px;
+  font-weight: bold;
+  text-align: center;
+  animation: neon-flashing 2s ease-in-out infinite alternate;
+}
+
+@keyframes neon-flashing {
+  from {
+    text-shadow: 0 0 10px #fffbad, 0 0 20px #48ff00, 0 0 30px #55ff00, 0 0 40px #11ff00;
+  }
+  to {
+    text-shadow: 0 0 5px #ffcc00, 0 0 10px #ffea00, 0 0 15px #d8ec25, 0 0 20px #b1bb23;
+  }
+}
+
+.btn-primary {
+    border-radius: 50px;
+    background-color: #603760;
+    border-color: #6528a6;
+}
+
+.btn-primary:hover {
+    background-color: #57006a;
+    border-color: #6a006a;
+}
+
+body {
+    padding-top: 5rem;
+}
+

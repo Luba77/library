@@ -1,0 +1,202 @@
+[
+  {
+    "model": "library.book",
+    "pk": 1,
+    "fields": {
+      "title": "Norwegian Wood",
+      "author": 1,
+      "description": "A nostalgic story of love and loss.",
+      "genre": [1, 2]
+    }
+  },
+  {
+    "model": "library.book",
+    "pk": 2,
+    "fields": {
+      "title": "The Murder of Roger Ackroyd",
+      "author": 2,
+      "description": "A classic detective novel with a twist.",
+      "genre": [2]
+    }
+  },
+  {
+    "model": "library.book",
+    "pk": 3,
+    "fields": {
+      "title": "Harry Potter and the Philosopher's Stone",
+      "author": 3,
+      "description": "The first book in the beloved Harry Potter series.",
+      "genre": [3]
+    }
+  },
+  {
+    "model": "library.book",
+    "pk": 4,
+    "fields": {
+      "title": "1984",
+      "author": 4,
+      "description": "A dystopian novel by George Orwell.",
+      "genre": [4]
+    }
+  },
+  {
+    "model": "library.book",
+    "pk": 5,
+    "fields": {
+      "title": "To Kill a Mockingbird",
+      "author": 5,
+      "description": "A classic novel about racial injustice in the American South.",
+      "genre": [5]
+    }
+  },
+  {
+    "model": "library.book",
+    "pk": 6,
+    "fields": {
+      "title": "Pride and Prejudice",
+      "author": 6,
+      "description": "Jane Austen's romantic comedy novel.",
+      "genre": [6]
+    }
+  },
+  {
+    "model": "library.book",
+    "pk": 7,
+    "fields": {
+      "title": "The Catcher in the Rye",
+      "author": 7,
+      "description": "A novel by J.D. Salinger.",
+      "genre": [7]
+    }
+  },
+  {
+    "model": "library.book",
+    "pk": 8,
+    "fields": {
+      "title": "The Great Gatsby",
+      "author": 8,
+      "description": "F. Scott Fitzgerald's masterpiece.",
+      "genre": [8]
+    }
+  },
+  {
+    "model": "library.book",
+    "pk": 9,
+    "fields": {
+      "title": "Moby-Dick",
+      "author": 9,
+      "description": "A novel by Herman Melville.",
+      "genre": [9]
+    }
+  },
+  {
+    "model": "library.book",
+    "pk": 10,
+    "fields": {
+      "title": "Brave New World",
+      "author": 10,
+      "description": "A dystopian novel by Aldous Huxley.",
+      "genre": [10]
+    }
+  },
+  {
+    "model": "library.book",
+    "pk": 11,
+    "fields": {
+      "title": "The Hobbit",
+      "author": 11,
+      "description": "J.R.R. Tolkien's fantasy novel.",
+      "genre": [11]
+    }
+  },
+  {
+    "model": "library.book",
+    "pk": 12,
+    "fields": {
+      "title": "Jane Eyre",
+      "author": 12,
+      "description": "A novel by Charlotte Brontë.",
+      "genre": [12]
+    }
+  },
+  {
+    "model": "library.book",
+    "pk": 13,
+    "fields": {
+      "title": "Wuthering Heights",
+      "author": 13,
+      "description": "Emily Brontë's only novel.",
+      "genre": [13]
+    }
+  },
+  {
+    "model": "library.book",
+    "pk": 14,
+    "fields": {
+      "title": "The Lord of the Rings",
+      "author": 14,
+      "description": "A high-fantasy novel by J.R.R. Tolkien.",
+      "genre": [14]
+    }
+  },
+  {
+    "model": "library.book",
+    "pk": 15,
+    "fields": {
+      "title": "The Picture of Dorian Gray",
+      "author": 15,
+      "description": "Oscar Wilde's only novel.",
+      "genre": [15]
+    }
+  },
+  {
+    "model": "library.book",
+    "pk": 16,
+    "fields": {
+      "title": "Dracula",
+      "author": 16,
+      "description": "A gothic horror novel by Bram Stoker.",
+      "genre": [16]
+    }
+  },
+  {
+    "model": "library.book",
+    "pk": 17,
+    "fields": {
+      "title": "Frankenstein",
+      "author": 17,
+      "description": "A novel by Mary Shelley.",
+      "genre": [17]
+    }
+  },
+  {
+    "model": "library.book",
+    "pk": 18,
+    "fields": {
+      "title": "Alice's Adventures in Wonderland",
+      "author": 18,
+      "description": "A children's novel by Lewis Carroll.",
+      "genre": [18]
+    }
+  },
+  {
+    "model": "library.book",
+    "pk": 19,
+    "fields": {
+      "title": "The Adventures of Sherlock Holmes",
+      "author": 19,
+      "description": "A collection of detective stories by Arthur Conan Doyle.",
+      "genre": [19]
+    }
+  },
+  {
+    "model": "library.book",
+    "pk": 20,
+    "fields": {
+      "title": "One Hundred Years of Solitude",
+      "author": 20,
+      "description": "A novel by Gabriel García Márquez.",
+      "genre": [20]
+    }
+  }
+]
