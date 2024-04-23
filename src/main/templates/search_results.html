@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+    <h1>Search Results</h1>
+
+    <h2>Books: </h2>
+    <ul>
+        {% for book in book_list %}
+            <li>{{ book.title }} by {{ book.author.first_name }} {{ book.author.last_name }}</li>
+        {% empty %}
+            <li>No books found</li>
+        {% endfor %}
+    </ul>
+
+    <h2>Overdue Books: </h2>
+    <ul>
+        {% for book_copy in overdue_books %}
+            <li style="color: red;">{{ book_copy.book.title }} by {{ book_copy.book.author.first_name }} {{ book_copy.book.author.last_name }} (Overdue)</li>
+            <li>Email: {{ book_copy.borrower.email }}</li>
+            <li><a href="{% url 'user_detail' book_copy.borrower.id %}">View User Detail</a></li>
+        {% empty %}
+            <li>No overdue books</li>
+        {% endfor %}
+    </ul>
+{% endblock %}
