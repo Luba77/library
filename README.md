@@ -1,6 +1,6 @@
 # Django Project
 
-## This project is a web application based on Django Rest Framework.
+## This project is a web application based on Django Framework.
 
 ### Instalation
 
