@@ -4,6 +4,7 @@ import datetime
 from django.db.models import Q
 from django.views.generic import DetailView, ListView
 
+from users.models import User
 from .models import Book, Author, BookCopy
 
 
@@ -63,18 +64,19 @@ class SearchResultsView(ListView):
             Q(author__first_name__icontains=query) |
             Q(author__last_name__icontains=query)
         )
+        return book_queryset
 
-        overdue_books = BookCopy.objects.filter(
-            status='l',
-            due_back__lt=datetime.date.today()
-        )
 
-        return book_queryset, overdue_books
+class SearchEmailResultsView(ListView):
+    model = BookCopy
+    template_name = 'search_user.html'
+    context_object_name = 'book_copy_list'
 
-    def get_context_data(self, **kwargs):
-        context = super(SearchResultsView, self).get_context_data(**kwargs)
-        book_queryset, overdue_books = self.get_queryset()
-        context['overdue_books'] = overdue_books
-        context['book_list'] = book_queryset
-        return context
+    def get_queryset(self):
+        email = self.request.GET.get('email')
+        user = User.objects.filter(email=email).first()
+        if user:
+            return BookCopy.objects.filter(borrower=user)
+        else:
+            return BookCopy.objects.none()
 

@@ -1,6 +1,6 @@
 from django.conf.urls import url
 from .views import BookListView, BookDetailView, AuthorListView, AuthorDetailView, BorrowedBookListView, \
-    AllUsersBorrowedBookListView, SearchResultsView
+    AllUsersBorrowedBookListView, SearchResultsView, SearchEmailResultsView
 
 app_name = 'library'
 
@@ -12,4 +12,5 @@ urlpatterns = [
     url(r'^user_orders/$', BorrowedBookListView.as_view(), name='borrowed_books'),
     url(r'^all_user_orders/$', AllUsersBorrowedBookListView.as_view(), name='all_borrowed_books'),
     url('search/', SearchResultsView.as_view(), name='search_results'),
+    url(r'^search_email/$', SearchEmailResultsView.as_view(), name='search_email_results'),
 ]

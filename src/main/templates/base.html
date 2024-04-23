@@ -40,7 +40,10 @@
       </li>
     </ul>
     <form class="form-inline mt-2 mt-md-0" action="{% url 'search_results' %}" method="get">
-        <input name="q" class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+        <input name="q" class="form-control mr-sm-2" type="text" placeholder="Search by book, author" aria-label="Search">
+    </form>
+    <form class="form-inline mt-2 mt-md-0" action="{% url 'search_email_results' %}" method="get">
+      <input name="email" class="form-control mr-sm-2" type="email" placeholder="Search by Email" aria-label="Search">
     </form>
     {% if user.is_authenticated %}
       <a href="{% url 'borrowed_books' %}" class="btn btn-primary">View My Borrowed Books</a>
