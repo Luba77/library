@@ -85,5 +85,8 @@ docker-compose exec web python manage.py loaddata library/operations/fixtures/bo
 ![](src/main/static/git_pictures/all_books.png)
 ### See all books with details of users statuses :
 ![](src/main/static/git_pictures/all_borrowed.png)
+### Find user by email and see him books :
+![](src/main/static/git_pictures/user_books.png)
+### Find book, author using search form :
+![](src/main/static/git_pictures/search_books.png)
 
-# Test other functionality, such a seach by author, book, overdue books and users

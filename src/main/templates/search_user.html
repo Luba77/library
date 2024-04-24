@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1>Search Results</h1>
+
+    {% if book_copy_list %}
+        <h2>Books Borrowed by {{ book_copy_list.0.borrower.email }}:</h2>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Author</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for book_copy in book_copy_list %}
+                    <tr>
+                        <td>{{ book_copy.book.title }}</td>
+                        <td>{{ book_copy.book.author.first_name }} {{ book_copy.book.author.last_name }}</td>
+                    </tr>
+                {% empty %}
+                    <tr>
+                        <td colspan="2">No books found for this user</td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    {% else %}
+        <p>No user found with the specified email</p>
+    {% endif %}
+{% endblock %}
